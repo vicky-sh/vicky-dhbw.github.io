@@ -1,0 +1,56 @@
+.aboutMeContainer {
+  margin-top: 50px;
+}
+
+#myImage {
+  height: 130px;
+  width: 130px;
+}
+
+.aboutMeContainer,
+.imageCol,
+.aboutMeCol,
+.b,
+.halloCol {
+  /*border: 1px solid black;*/
+}
+
+#aboutMe {
+  font-family: "Darumadrop One", cursive;
+}
+
+.imageCol {
+  padding-left: 20px;
+}
+
+#aboutMePara {
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: "Roboto", sans-serif;
+}
+
+.language {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 8vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .language {
+    font-size: 12vw;
+  }
+
+  #myImage {
+    height: 90px;
+    width: 90px;
+  }
+  .aboutMeContainer {
+    margin-top: 10px;
+  }
+}
+
+.avatar {
+  border: 6px solid #416286;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  padding: 4px;
+}
