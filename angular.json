@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "https://github.com/vicky-dhbw/vkeys-box/",
+            "baseHref": "https://github.com/vicky-dhbw/vkeys-box",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
