@@ -10,6 +10,7 @@ import { Test4Component } from './test4/test4.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 const appRoute: Routes = [
   { path: '', component: AboutMeComponent },
@@ -34,6 +35,7 @@ const appRoute: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoute, { useHash: true }),
     BrowserAnimationsModule,
+    NgxGoogleAnalyticsModule.forRoot('G-X91L7SY6WR'),
   ],
   providers: [],
   bootstrap: [AppComponent],
