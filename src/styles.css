@@ -73,8 +73,14 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding: 25px;
   background: #6999d0;
+  color: black;
+
+  h3{
+    font-size: 25px;
+    font-weight: bolder;
+  }
 }
 
 #sidebar ul.components {
@@ -220,5 +226,11 @@ a.article:hover {
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
