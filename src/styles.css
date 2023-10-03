@@ -76,11 +76,10 @@ a:focus {
   padding: 25px;
   background: #6999d0;
   color: black;
-
-  h3{
-    font-size: 25px;
-    font-weight: bolder;
-  }
+}
+#sidebar .sidebar-header h3 {
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 #sidebar ul.components {
