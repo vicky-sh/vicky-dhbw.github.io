@@ -1,0 +1,27 @@
+.accordion-button {
+  color: black;
+}
+
+#accordionFlushExample {
+  background: #89aeb1;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-bg: #9bb9c6;
+  --bs-accordion-active-bg: #86b49d;
+  --bs-accordion-color: black;
+  --bs-accordion-bg: #aacbbb;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-header {
+  margin-bottom: 0px;
+}
+
+.list-group-item {
+  background-color: #aacbbb;
+}
