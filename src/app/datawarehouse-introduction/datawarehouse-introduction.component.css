@@ -1,0 +1,44 @@
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.data-warehouse-image {
+  width: 70%;
+  height: 300px;
+}
+
+.container-fluid,
+.row,
+.myCol,
+.link-card {
+  /*border: 1px solid black;*/
+}
+
+.useful-links-bar {
+  top: 9%;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: auto;
+  width: 25%;
+  height: 60vh;
+
+  @media (max-width: 1000px) {
+    width: 100%; /* You can adjust this value as needed */
+  }
+
+  /* Set the width for smaller mobile devices */
+  @media (max-width: 480px) {
+    width: auto;
+  }
+}
+
+.link-card {
+  background-color: #beccdc;
+  color: black;
+  border-radius: 10px;
+}
+
+.myhr {
+  color: black;
+}

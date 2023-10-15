@@ -88,7 +88,7 @@ a:focus {
   position: absolute;
   top: 50%;
   right: 20px;
-  transform: translateY(-50%);
+  transform: translateY(-180%);
 }
 
 /* ---------------------------------------------------
@@ -169,3 +169,4 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+

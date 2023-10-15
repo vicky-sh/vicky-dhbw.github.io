@@ -11,10 +11,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { DatawarehouseIntroductionComponent } from './datawarehouse-introduction/datawarehouse-introduction.component';
 
 const appRoute: Routes = [
   { path: '', component: AboutMeComponent },
-  { path: 'Test2', component: Test2Component },
+  {
+    path: 'Datawarehouse-Introduction',
+    component: DatawarehouseIntroductionComponent,
+  },
   { path: 'Test3', component: Test3Component },
   { path: 'Test4', component: Test4Component },
   { path: 'about-me', component: AboutMeComponent },
@@ -29,6 +33,7 @@ const appRoute: Routes = [
     Test3Component,
     Test4Component,
     AboutMeComponent,
+    DatawarehouseIntroductionComponent,
   ],
   imports: [
     BrowserModule,

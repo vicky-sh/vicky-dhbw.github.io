@@ -3,13 +3,13 @@
 }
 
 #accordionFlushExample {
-  background: #89aeb1;
+  background: #589599;
 }
 
 .accordion {
   --bs-accordion-btn-focus-box-shadow: none;
-  --bs-accordion-btn-bg: #9bb9c6;
-  --bs-accordion-active-bg: #86b49d;
+  --bs-accordion-btn-bg: #b0d8c3;
+  --bs-accordion-active-bg: white;
   --bs-accordion-color: black;
   --bs-accordion-bg: #aacbbb;
 }
@@ -24,4 +24,34 @@
 
 .list-group-item {
   background-color: #aacbbb;
+}
+
+#sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1%; /* Adjust this value as needed */
+
+  /* Add a max-height and overflow for scrolling */
+  max-height: 90vh; /* Adjust this value as needed */
+  overflow-y: auto;
+
+  /* Add a width for the sidebar */
+}
+
+/* Adjust styles when the sidebar is sticky */
+#sidebar.sticky {
+  position: fixed;
+  /* Add any other styles you want for the sticky state, e.g., background color, box shadow, etc. */
+}
+
+.sticky-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+
+  /* Add any other styles you want for the sticky state, e.g., background color, box shadow, etc. */
+}
+
+.navbar {
+  --bs-navbar-color: white;
 }
