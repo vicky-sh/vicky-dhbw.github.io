@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid myCont">
   <div class="row">
     <div class="col-lg-9 myCol">
       <p class="h1 p-2 heading">Introduction to Data Warehouse</p>
@@ -11,6 +11,94 @@
         warehouse is to provide a single, consolidated view of historical and
         current data that can be used for in-depth analysis and decision-making.
       </p>
+      <br />
+      <p>
+        A data warehouse is a an <strong>OLAP</strong> (Online Analytical
+        Processing) system which means it is designed for complex and ad-hoc
+        querying and analysis of large volumes of historical data.
+        <strong>OLTP</strong> (Online Transaction Processing) systems on the
+        other hand are designed for real-time transactional processing,
+        including tasks like inserting, updating, and deleting records. They are
+        used for day-to-day operations like order processing and inventory
+        management.
+      </p>
+
+      <br />
+      <p>
+        This article should emphazise on the practical doing for understanding
+        how data warehouse works. We will be using the following softwares for
+        this:
+      </p>
+      <div class="list-div">
+        <ul>
+          <li class="mb-2">
+            <strong>Docker Desktop</strong>:
+            <a
+              class="list_tag"
+              target="_blank"
+              href="https://www.docker.com/products/docker-desktop/"
+              >https://www.docker.com/products/docker-desktop/</a
+            >
+          </li>
+          <li class="mb-2">
+            <strong>Microsoft Azure Data Studio</strong>:
+            <a
+              class="list_tag"
+              href="https://azure.microsoft.com/en-us/products/data-studio"
+              target="_blank"
+              >https://azure.microsoft.com/en-us/products/data-studio</a
+            >
+          </li>
+          <li class="mb-2">
+            <strong>Apache Airflow</strong>:
+            <a
+              href="https://airflow.apache.org/"
+              target="_blank"
+              class="list_tag"
+              >https://airflow.apache.org/</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        To simplify the management of multiple database servers on the host
+        machine, we will employ Docker containers. These containers will serve
+        as the foundation for our database setup. Our tool of choice for
+        interacting with these containers will be Azure Data Studio. Before
+        diving into the implementation, let's clarify our objectives. Our
+        initial tasks involve the creation of two Microsoft SQL Server database
+        containers. One of these will function as our data warehouse, while the
+        other will serve as a typical database, which we'll refer to as the OLTP
+        database. Following this, we'll proceed to generate sample tables within
+        the OLTP database and populate them with data. Our next step will be
+        establishing the OLTP database server as a linked server within the data
+        warehouse database, enabling us to execute queries that extract data
+        from the OLTP database. The diagram below shows how our system would
+        look like:
+      </p>
+
+      <div class="row justify-content-center image-div">
+        <div class="col-12">
+          <img
+            src="assets/our_system.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <pre>
+            <code class="language-bash">sudo docker pull mcr.microsoft.com/mssql/server:2019-latest</code>
+          </pre>
+          <pre>
+            <code class="language-bash">docker run -d --name OLTP_database -e 'ACCEPT_EULA=Y' 
+-e "MSSQL_SA_PASSWORD=oltp_database_password" 
+-p 1435:1433 mcr.microsoft.com/mssql/server:2019-latest</code>
+          </pre>
+        </div>
+      </div>
     </div>
     <div class="col-lg-3 myCol useful-links-bar">
       <p class="h5 p-2">Useful links</p>
@@ -18,32 +106,38 @@
         <div class="col-12 p-2 mb-2 link-card">
           <p class="h6 p-1">heading 1</p>
           <hr class="myhr" />
-          <a
-            href="https://bestofjs.org/projects/highlightjs"
-            target="_blank"
-            class="p-1"
-            >https://bestofjs.org/projects/highlightjs</a
-          >>
+          <p style="word-wrap: break-word">
+            <a
+              href="https://bestofjs.org/projects/highlightjs"
+              target="_blank"
+              class="p-1"
+              >https://bestofjs.org/projects/highlightjs</a
+            >>
+          </p>
         </div>
         <div class="col-12 p-2 mb-2 link-card">
           <p class="h6 p-1">heading 2</p>
           <hr class="myhr" />
-          <a
-            href="https://bestofjs.org/projects/highlightjs"
-            target="_blank"
-            class="p-1"
-            >https://bestofjs.org/projects/highlightjs</a
-          >>
+          <p style="word-wrap: break-word">
+            <a
+              href="https://bestofjs.org/projects/highlightjs"
+              target="_blank"
+              class="p-1"
+              >https://bestofjs.org/projects/highlightjs</a
+            >>
+          </p>
         </div>
         <div class="col-12 p-2 mb-2 link-card">
           <p class="h6 p-1">heading 3</p>
           <hr class="myhr" />
-          <a
-            href="https://bestofjs.org/projects/highlightjs"
-            target="_blank"
-            class="p-1"
-            >https://bestofjs.org/projects/highlightjs</a
-          >>
+          <p style="word-wrap: break-word">
+            <a
+              href="https://bestofjs.org/projects/highlightjs"
+              target="_blank"
+              class="p-1"
+              >https://bestofjs.org/projects/highlightjs</a
+            >>
+          </p>
         </div>
       </div>
     </div>

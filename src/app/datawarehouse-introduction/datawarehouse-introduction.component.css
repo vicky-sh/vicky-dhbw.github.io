@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 .heading {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -41,4 +43,31 @@
 
 .myhr {
   color: black;
+}
+
+p,
+ul,
+li {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.list-div {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.list_tag {
+  color: blue;
+}
+
+code {
+  border-radius: 5px;
+}
+
+.image-div {
+  margin: auto;
+  width: 50%;
 }
